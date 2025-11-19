@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simulación 3D - Autopista El Alto - La Paz (Versión Media)</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Three.js (r128) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- OrbitControls (examples) -->
+  <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Simulación 3D: Minibús - Autopista El Alto → La Paz</h1>
+  </header>
+
+  <div id="container">
+    <div id="scene-container"></div>
+
+    <aside id="panel">
+      <h2>Información del recorrido</h2>
+      <div class="info"><b>Tramo actual:</b> <span id="tramo">—</span></div>
+      <div class="info"><b>Magnitud (m):</b> <span id="magnitud">—</span></div>
+      <div class="info"><b>Velocidad (m/s):</b> <span id="velocidad">—</span></div>
+      <div class="info"><b>Aceleración (m/s²):</b> <span id="aceleracion">—</span></div>
+      <div style="height:10px"></div>
+      <button id="btn-toggle-vectors">Ocultar vectores</button>
+      <button id="btn-reset">Reiniciar animación</button>
+      <p class="hint">Usa el ratón para rotar/zoom (arrastrar, rueda).</p>
+    </aside>
+  </div>
+
+  <footer>
+    <small>Proyecto: Cálculo II — Vectores en el espacio. Versión Media</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
